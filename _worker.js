@@ -97,7 +97,7 @@ export default {
 
 		  // 如果访问根目录，返回HTML
 		  if (url.pathname === "/") {
-			  return new Response(await getRootHtml(), {
+			  return new Response(await nginx(), {
 				  headers: {
 					  'Content-Type': 'text/html; charset=utf-8'
 				  }
